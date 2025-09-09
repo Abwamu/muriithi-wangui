@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration Form</title>
+</head>
+<body>
+  <h1>User Registration Form</h1>
+
+  <form>
+    <!-- Personal Information -->
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"><br><br>
+
+      Gender:
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      <label for="photo">Profile Photo:</label>
+      <input type="file" id="photo" name="photo">
+    </fieldset>
+    <br>
+
+    <!-- Contact & Address Information -->
+    <fieldset>
+      <legend>Contact & Address Information</legend>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone"><br><br>
+
+      <label for="website">Personal Website:</label>
+      <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+      <label for="address">Street Address:</label>
+      <input type="text" id="address" name="address"><br><br>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city"><br><br>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="">Select Country</option>
+        <option value="kenya">Kenya</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+      </select><br><br>
+
+      <label for="zip">ZIP/Postal Code:</label>
+      <input type="text" id="zip" name="zip"><br><br>
+
+      <label for="time">Preferred Contact Time:</label>
+      <input type="time" id="time" name="time">
+    </fieldset>
+    <br>
+
+    <!-- Preferences & Interests -->
+    <fieldset>
+      <legend>Preferences & Interests</legend>
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" name="color" value="#ff0000"><br><br>
+
+      <label for="experience">Experience Level (1-10):</label>
+      <input type="range" id="experience" name="experience" min="1" max="10"><br><br>
+
+      <label for="bmonth">Birth Month:</label>
+      <input type="month" id="bmonth" name="bmonth"><br><br>
+
+      <label for="aweek">Available Week:</label>
+      <input type="week" id="aweek" name="aweek"><br><br>
+
+      <label for="keywords">Search Keywords:</label>
+      <input type="search" id="keywords" name="keywords" placeholder="Enter keywords...">
+    </fieldset>
+    <br>
+
+    <!-- Submit -->
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
+<!-- Interests -->
+    <fieldset>
+      <legend>Interests (Select all that apply):</legend>
+      <input type="checkbox" id="tech" name="interests" value="Technology">
+      <label for="tech">Technology</label><br>
+
+      <input type="checkbox" id="sports" name="interests" value="Sports">
+      <label for="sports">Sports</label><br>
+
+      <input type="checkbox" id="music" name="interests" value="Music">
+      <label for="music">Music</label><br>
+
+      <input type="checkbox" id="travel" name="interests" value="Travel">
+      <label for="travel">Travel</label><br>
+
+      <input type="checkbox" id="reading" name="interests" value="Reading">
+      <label for="reading">Reading</label><br>
+
+      <input type="checkbox" id="cooking" name="interests" value="Cooking">
+      <label for="cooking">Cooking</label>
+    </fieldset>
+    <br>
+
+    <!-- Education & Password -->
+    <fieldset>
+      <legend>Education & Security</legend>
+      <label for="education">Education Level:</label>
+      <select id="education" name="education">
+        <option value="">Select Education Level</option>
+        <option value="highschool">High School</option>
+        <option value="diploma">Diploma</option>
+        <option value="bachelor">Bachelor’s Degree</option>
+        <option value="masters">Master’s Degree</option>
+        <option value="phd">PhD</option>
+      </select><br><br>
+
+      <label for="password">Create Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="cpassword">Confirm Password:</label>
+      <input type="password" id="cpassword" name="cpassword">
+    </fieldset>
+    <br>
+
+    <!-- Feedback & Additional Info -->
+    <fieldset>
+      <legend>Feedback & Additional Information</legend>
+      <label for="about">Tell us about yourself:</label><br>
+      <textarea id="about" name="about" rows="4" cols="40" placeholder="Write a brief description about yourself..."></textarea><br><br>
+
+      <label for="feedback">Suggestions for improvement:</label><br>
+      <textarea id="feedback" name="feedback" rows="3" cols="40" placeholder="Any suggestions or feedback..."></textarea>
+    </fieldset>
+    <br>
+
+    <!-- Registration -->
+    <fieldset>
+      <legend>Registration Details</legend>
+      <label for="datetime">Registration Date & Time:</label>
+      <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+      <label for="source">How did you hear about us?</label>
+      <select id="source" name="source">
+        <option value="">Select Source</option>
+        <option value="friends">Friends/Family</option>
+        <option value="social">Social Media</option>
+        <option value="ads">Advertisements</option>
+        <option value="web">Web Search</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="resume">Upload Resume (optional):</label>
+      <input type="file" id="resume" name="resume"><br><br>
+
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter">Subscribe to our newsletter</label><br>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the Terms and Conditions</label><br>
+
+      <input type="checkbox" id="privacy" name="privacy" required>
+      <label for="privacy">I agree to the Privacy Policy</label>
+    </fieldset>
+    <br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
