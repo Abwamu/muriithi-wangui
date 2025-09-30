@@ -26,6 +26,9 @@ This project contains two main files:
 You can edit both files to add more years, subjects, or customize the design.  
 
 ## 📸 Preview
+![Timetable Screenshot]
+(<img width="1920" height="888" alt="timetable_preview" src="https://github.com/user-attachments/assets/d0cdbdf3-27ea-4618-9f88-665efe31711b" />
+)
 When you open it in a browser, the timetable will look like a real school schedule with days, times, subjects, breaks, and activities.  
 
  ## 🚀 How to Run
